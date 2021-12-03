@@ -1,4 +1,4 @@
-# FrontEnd Challenge :tw-1f33b:
+# FrontEnd Challenge
 
 I used the **React** framework, **Axios** to get
 the information from the Api, **MD5** to get the _hash,_ **Material UI** to
