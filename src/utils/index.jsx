@@ -1,8 +1,6 @@
 import md5 from "md5";
 import axios from "axios";
 
-//https://gateway.marvel.com:443/v1/public/characters?limit=50&apikey=8c220ea551c65932375b1be6486e4a0e
-
 const PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY;
 const PRIVATE_KEY = process.env.REACT_APP_PRIVATE_KEY;
 const ts = new Date().toISOString();

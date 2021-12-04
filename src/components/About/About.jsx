@@ -51,9 +51,9 @@ export const About = () => {
 
         <div className="text-info">
           Hi! I'm Rodrigo, this is my proposal for the Frontend Developer
-          challenge, using Marvel Api.I used the React framework, Axios to get
-          the information from the Api, MD5 to get the hash, Material UI to
-          solve the UI design. Styles with SASS and Styled-Components, and the
+          challenge, using Marvel Api.I used the React, Axios to get the
+          information from the Api, MD5 to get the hash, Material UI to solve
+          the UI design. Styles with SASS and Styled-Components, and the
           features of React Router Dom, to implement dynamic routing in the web
           app. The animations were made with GSAP.
         </div>

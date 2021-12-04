@@ -1,6 +1,6 @@
 # FrontEnd Challenge
 
-I used the **React** framework, **Axios** to get
+I used the **React**, **Axios** to get
 the information from the Api, **MD5** to get the _hash,_ **Material UI** to
 solve the UI design. Styles with **SASS** and **Styled-Components**, and the
 features of **React Router Dom**, to implement dynamic routing in the web
