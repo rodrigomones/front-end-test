@@ -23,8 +23,7 @@ export const About = () => {
         pin: document.querySelector(".spiderman"),
       },
     });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [tl]);
 
   useEffect(() => {
     let sections = gsap.utils.toArray(".panel");
