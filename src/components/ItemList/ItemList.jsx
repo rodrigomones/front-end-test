@@ -1,5 +1,5 @@
 import { Grid, IconButton, Box } from "@mui/material";
-import { Item } from "../Card/Item";
+import Item from "../Card/Item";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ProgressBar from "../ProgressBar/ProgressBar";
 import imgNotFound from "../../assets/notFound.jpeg";

@@ -24,8 +24,7 @@ $white: #fff;
   padding-left: 24px;
 }
 
-// ----- About -----
-
+// ----- Page Missing --------
 .album-container {
   position: relative;
   height: 70vh;
@@ -84,27 +83,28 @@ $white: #fff;
   }
 }
 
+// ----- About -----
 .title {
   width: 100vw;
   height: 200vh;
   text-align: center;
   background-color: #212121;
-}
-.spiderman {
-  position: absolute;
-  width: 20vw;
-  z-index: 9999;
-}
-.contenedor__animaciones {
-  overflow-x: hidden;
-  position: relative;
-  background-image: linear-gradient(
-    179deg,
-    rgba(34, 34, 34, 1) 0%,
-    rgba(8, 0, 153, 1) 59.7%,
-    rgba(118, 6, 166, 1) 83.4%,
-    rgba(233, 0, 64, 0.58) 100%
-  );
+  .contenedor__animaciones {
+    overflow-x: hidden;
+    position: relative;
+    background-image: linear-gradient(
+      179deg,
+      rgba(34, 34, 34, 1) 0%,
+      rgba(8, 0, 153, 1) 59.7%,
+      rgba(118, 6, 166, 1) 83.4%,
+      rgba(233, 0, 64, 0.58) 100%
+    );
+    .spiderman {
+      position: absolute;
+      width: 20vw;
+      z-index: 9999;
+    }
+  }
 }
 
 .portrait {

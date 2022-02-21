@@ -7,7 +7,7 @@ import { CardActionArea } from "@mui/material";
 import { Link } from "react-router-dom";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 
-export const Item = ({ id, name, title, thumbnail, isActive }) => {
+const Item = ({ id, name, title, thumbnail, isActive }) => {
   return (
     <Card
       key={id}
@@ -36,3 +36,5 @@ export const Item = ({ id, name, title, thumbnail, isActive }) => {
     </Card>
   );
 };
+
+export default React.memo(Item);

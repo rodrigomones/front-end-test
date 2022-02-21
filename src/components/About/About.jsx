@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import TextAnimation from "./TextAnimation";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -7,24 +7,25 @@ import portrait from "../../assets/portrait.jpg";
 export const About = () => {
   gsap.registerPlugin(ScrollTrigger);
   const tl = gsap.timeline();
+  const spidermanAnim = useRef();
+  const containerAnim = useRef();
 
   useEffect(() => {
-    const element = document.querySelector(".spiderman");
+    const element = spidermanAnim.current;
     tl.from(element, {
       opacity: 1,
       y: -650,
       repeat: 1,
       yoyo: true,
       scrollTrigger: {
-        trigger: document.querySelector(".contenedor__animaciones"),
+        trigger: containerAnim.current,
         start: "top top",
         end: "bottom center",
         scrub: 3,
-        pin: document.querySelector(".spiderman"),
+        pin: spidermanAnim.current,
       },
     });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [tl]);
 
   useEffect(() => {
     let sections = gsap.utils.toArray(".panel");
@@ -45,8 +46,13 @@ export const About = () => {
   return (
     <div className="title">
       <TextAnimation />
-      <div className="contenedor__animaciones">
-        <img className="spiderman" src={spiderman} alt="spiderman" />
+      <div className="contenedor__animaciones" ref={containerAnim}>
+        <img
+          className="spiderman"
+          ref={spidermanAnim}
+          src={spiderman}
+          alt="spiderman"
+        />
         <img src={portrait} alt="self portrait" className="portrait" />
 
         <div className="text-info">
